@@ -1,6 +1,6 @@
 defmodule Humanizex.Numbers do
   @moduledoc """
-	This module handles everything related to numbers.
+  This module handles everything related to numbers.
   """
 
   @doc """

@@ -36,7 +36,7 @@ defmodule Humanizex.MixProject do
       files: ["lib", "mix.exs", "README.md", "LICENSE"],
       maintainers: ["Weslei Juan Moser Pereira"],
       licenses: ["MIT"],
-      links: %{"GitHub": @source_url}
+      links: %{GitHub: @source_url}
     ]
   end
 
