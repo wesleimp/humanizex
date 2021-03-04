@@ -1,18 +1,5 @@
 defmodule Humanizex do
   @moduledoc """
-  Documentation for `Humanizex`.
+  A simple library for making the web more humane.
   """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Humanizex.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
 end

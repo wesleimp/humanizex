@@ -1,5 +1,7 @@
 defmodule Humanizex.Numbers do
-  @moduledoc false
+  @moduledoc """
+	This module handles everything related to numbers.
+  """
 
   @doc """
   Truncates a number to an upper bound.

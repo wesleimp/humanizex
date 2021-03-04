@@ -1,5 +1,7 @@
 defmodule Humanizex.Strings do
-  @moduledoc false
+  @moduledoc """
+  This module handles everything related to strings.
+  """
 
   @doc """
   Truncates a string if it is longer than the specified number of characters (inclusive).
