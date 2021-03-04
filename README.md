@@ -1,6 +1,6 @@
 # Humanizex
 
-**TODO: Add description**
+A simple library for making the web more humane.
 
 ## Installation
 
@@ -15,7 +15,5 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/humanizex](https://hexdocs.pm/humanizex).
+Check out the [documentation](https://hexdocs.pm/humanizex) for more information.
 
