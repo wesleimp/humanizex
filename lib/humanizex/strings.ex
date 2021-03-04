@@ -20,8 +20,8 @@ defmodule Humanizex.Strings do
   	"Some aweso--"
   """
   @spec truncate(String.t()) :: String.t()
-  @spec truncate(String.t(), Integer.t()) :: String.t()
-  @spec truncate(String.t(), Integer.t(), String.t()) :: String.t()
+  @spec truncate(String.t(), integer()) :: String.t()
+  @spec truncate(String.t(), integer(), String.t()) :: String.t()
 
   def truncate(text), do: text
 

@@ -14,9 +14,9 @@ defmodule Humanizex.Numbers do
   	iex> Humanizex.Numbers.bounded(50, 100)
   	"50"
   """
-  @spec bounded(Integer.t()) :: String.t()
-  @spec bounded(Integer.t(), Integer.t()) :: String.t()
-  @spec bounded(Integer.t(), Integer.t(), String.t()) :: String.t()
+  @spec bounded(integer()) :: String.t()
+  @spec bounded(integer(), integer()) :: String.t()
+  @spec bounded(integer(), integer(), String.t()) :: String.t()
   def bounded(num, bound \\ 100, ending \\ "+") do
     case num > bound do
       true -> "#{bound}#{ending}"
@@ -38,7 +38,7 @@ defmodule Humanizex.Numbers do
   	iex> Humanizex.Numbers.bounded(21)
   	"21st"
   """
-  @spec ordinal(Integer.t()) :: String.t()
+  @spec ordinal(integer()) :: String.t()
   def ordinal(0), do: "#{0}th"
   def ordinal(value) when rem(value, 100) in [11, 12, 13], do: "#{value}th"
 
@@ -54,6 +54,15 @@ defmodule Humanizex.Numbers do
     "#{value}#{pos}"
   end
 
+  @doc """
+  Ensures precision value is a positive integer.
+
+  ## Examples
+
+  	iex> Humanizex.Numbers.normalize_precision(-232.231)
+  	232
+  """
+  @spec normalize_precision(integer()) :: integer()
   def normalize_precision(number) do
     number
     |> abs
