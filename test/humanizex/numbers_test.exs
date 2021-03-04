@@ -46,8 +46,8 @@ defmodule Humanizex.NumbersTest do
   end
 
   describe "normalize_precision" do
-  	test "Normalizes the given precision" do
-  		assert 232 == Numbers.normalize_precision(-232.231)
-  	end
+    test "Normalizes the given precision" do
+      assert 232 == Numbers.normalize_precision(-232.231)
+    end
   end
 end

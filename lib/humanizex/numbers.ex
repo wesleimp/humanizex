@@ -53,8 +53,8 @@ defmodule Humanizex.Numbers do
   end
 
   def normalize_precision(number) do
-  	number
-  	|> abs
-  	|> round()
+    number
+    |> abs
+    |> round()
   end
 end
